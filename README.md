@@ -29,6 +29,7 @@ Hệ thống bao gồm **server** (Spring Boot) xử lý logic nghiệp vụ đ�
 Server kết nối với **MySQL database** để lưu trữ dữ liệu người dùng, đấu giá, lượt đặt giá và danh sách theo dõi. Hệ thống có **Scheduler** tự động quản lý vòng đời auction (start/end) và cơ chế **auto-extend** thông minh khi có bid phút cuối.
 
 **Cấu trúc logic tổng quát:**
+
 ```
 Web Client (Port 3000)  <-->  Spring Boot Server (Port 8000)  <-->  MySQL Database (Port 3306)
       |                              |
@@ -53,15 +54,16 @@ Web Client (Port 3000)  <-->  Spring Boot Server (Port 8000)  <-->  MySQL Databa
 
 > Liệt kê công nghệ, framework, thư viện chính mà nhóm sử dụng.
 
-| Thành phần | Công nghệ                                    | Ghi chú                           |
-| ---------- | -------------------------------------------- | --------------------------------- |
-| Server     | Java 17 + Spring Boot 3.2.0                  | REST API + WebSocket              |
-| Client     | Html + Css + JavaScript                      | Web Application                   |
-| Database   | MySQL 8.0                                    | Lưu trữ dữ liệu                   |
-| WebSocket  | Spring WebSocket + STOMP (SockJS + STOMP.js) | Real-time communication           |
-| Build Tool | Maven 3.8+ (Backend) + npm (Frontend)        | Dependency management             |
+| Thành phần | Công nghệ                                    | Ghi chú                 |
+| ---------- | -------------------------------------------- | ----------------------- |
+| Server     | Java 17 + Spring Boot 3.2.0                  | REST API + WebSocket    |
+| Client     | Html + Css + JavaScript                      | Web Application         |
+| Database   | MySQL 8.0                                    | Lưu trữ dữ liệu         |
+| WebSocket  | Spring WebSocket + STOMP (SockJS + STOMP.js) | Real-time communication |
+| Build Tool | Maven 3.8+ (Backend) + npm (Frontend)        | Dependency management   |
 
 ---
+
 ## 🚀 HƯỚNG DẪN CHẠY DỰ ÁN
 
 ### 1. Clone repository
