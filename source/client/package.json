@@ -1,11 +1,21 @@
 {
-  "name": "auction-client",
+  "name": "auction-system-client",
   "version": "1.0.0",
-  "description": "Auction System Client - Demo",
+  "description": "Frontend client for Online Auction System",
+  "main": "index.js",
   "scripts": {
-    "start": "npx http-server public -p 3000 -c-1"
+    "start": "live-server public --port=5500",
+    "test": "echo \"No tests yet\" && exit 0"
   },
+  "keywords": [
+    "auction",
+    "bidding",
+    "websocket"
+  ],
+  "author": "Your Team",
+  "license": "MIT",
   "devDependencies": {
-    "http-server": "^14.1.1"
-  }
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {}
 }

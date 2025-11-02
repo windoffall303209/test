@@ -1,108 +1,108 @@
-/* CSS Demo - Rất đơn giản */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* =====================================================
+   AUCTION SYSTEM - CUSTOM CSS
+   Foundation Code - Chỉ chứa styles cơ bản
+   ===================================================== */
 
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  min-height: 100vh;
-  padding: 20px;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-header h1 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  color: #666;
-  font-size: 14px;
-}
-
-.content {
-  margin-bottom: 30px;
-}
-
-section {
-  margin-bottom: 30px;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-}
-
-section h2 {
-  color: #667eea;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  background: #667eea;
   color: white;
+}
+
+.hero h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Styles */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-button:hover {
-  background: #5568d3;
-}
-
-.status {
-  padding: 10px;
-  border-radius: 5px;
+/* Loading Spinner */
+.loading-spinner {
   text-align: center;
-  margin-bottom: 10px;
-  background: #ffcccc;
-  color: #cc0000;
+  padding: 3rem;
 }
 
-.status.connected {
-  background: #ccffcc;
-  color: #006600;
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
 }
 
-.messages {
-  min-height: 100px;
-  padding: 15px;
-  background: white;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s;
 }
 
-footer {
-  text-align: center;
-  color: #666;
-  font-size: 12px;
-  margin-top: 20px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+.slide-up {
+  animation: slideUp 0.5s;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* =====================================================
+   Chỗ này sẽ thêm các styles cụ thể
+   ===================================================== */
+
+/* Chỗ này sẽ thêm Admin styles:
+   - Admin dashboard styles
+   - Admin table styles
+   - Admin form styles
+*/
+
+/* Chỗ này sẽ thêm User styles:
+   - Auction card styles
+   - Bid button styles
+   - Bid history styles
+   - Watchlist styles
+*/
+
+/* Chỗ này sẽ thêm Core styles:
+   - Countdown timer styles
+   - Price display styles
+   - Status badge styles
+   - Notification styles
+*/
